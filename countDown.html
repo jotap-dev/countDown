@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CountDown</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="form">
+        <h2 style="font-weight: lighter;">Insira seus Dados:</h2>
+        <button onclick="exitForm()">x</button>
+        <input type="text" placeholder="nome completo" id="personName">
+        <input type="email" placeholder="email" id="personEmail">
+        <input type="password" placeholder="Senha" id="personPass">
+        <input type="button" value="Finalizar Cadastro">
+    </div>
+
+    <main>
+        <table class="count">
+            <caption>READY TO LAUNCH IN...</caption>
+            <Tr class="countersHead">
+                <td>Dias</td>
+                <td>Horas</td>
+                <td>Minutos</td>
+                <td>Segundos</td>
+            </Tr>
+            <Tr class="counters">
+                <td id="days">2</td>
+                <td>:</td>
+                <td id="hours">0</td>
+                <td>:</td>
+                <td id="minutes">0</td>
+                <td>:</td>
+                <td id="seconds">04</td>
+            </Tr>
+        </table>
+        <div class="subscribe">
+            <p>inscreva-se e saiba mais a cerca do laçamento do curso!</p>
+            <a onclick="showForm()">inscreva-se</a>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
